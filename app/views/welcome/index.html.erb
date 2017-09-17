@@ -1,0 +1,22 @@
+<%
+  @entries = Entry.all
+%>
+  <h1>My Rails Girls Diary</h1>
+  <div>
+    <% for entry in @entries %>
+  <h2><%= entry.title %></h2>
+    <p><%= entry.date %></p>
+    <p><%= entry.contents %></p>
+<% end %>
+ 
+  <h1>My favourite websites</h1>
+    <ul>
+      <li><a href="http://railsgirls.com">Rails Girls</a></li>
+      <li><a href="https://en.wikibooks.org/wiki/Ruby_Programming">Wikibooks</a></li>
+      <li><a href="http://guides.rubyonrails.org">Ruby on Rails Guides</a></li>
+    </ul>
+  </div>
+  <div>
+  
+</div>
+
